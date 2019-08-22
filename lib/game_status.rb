@@ -27,7 +27,7 @@ def won?(board)
       puts win_index.inspect
     else
       return false
-    end
+  end
   end
 end
 
