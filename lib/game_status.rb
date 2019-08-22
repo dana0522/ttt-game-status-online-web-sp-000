@@ -22,8 +22,10 @@ def won?(board)
     puts "WIN"
   elsif status.all? {|x| x=="O"}
     puts "WIN2"
+  else
+    puts "FALSE"
   end
 end
 end
 
-won?()
+won?(["X", "X", "X", "O", "O", " ", " ", " ", " "])
