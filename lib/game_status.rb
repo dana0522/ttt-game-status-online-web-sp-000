@@ -9,9 +9,9 @@ status=[]
 win_index=[]
 def won?(board)
   for each_combination in WIN_COMBINATIONS
-    win_index_1=each_combination[0].chomp
-    win_index_2=each_combination[1].chomp
-    win_index_3=each_combination[2].chomp
+    win_index_1=each_combination[0]
+    win_index_2=each_combination[1]
+    win_index_3=each_combination[2]
     
     position_1=board[win_index_1]
     position_2=board[win_index_2]
