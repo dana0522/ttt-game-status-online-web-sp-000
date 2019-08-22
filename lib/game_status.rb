@@ -19,7 +19,7 @@ def won?(board)
     
     status=[position_1,position_2,position_3]
     win_index=[win_index_1,win_index_2,win_index_3]
-  if status.all? {|x| x=="X"}
+  if position_1=="X" && position_2=="X" && position_3=="x"
     puts win_index.inspect
   elsif status.all? {|x| x=="O"}
     puts win_index.inspect
