@@ -18,4 +18,10 @@ def won?(board)
     
     status=[position_1,position_2,position_3]
     
-  if status.all? {|x| x}
+  if status.all? {|x| x=="X"}
+    puts "WIN"
+  elsif status.all? {|x| x=="O"}
+    puts "WIN2"
+  end
+end
+end
