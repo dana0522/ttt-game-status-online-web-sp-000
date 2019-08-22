@@ -9,9 +9,9 @@ status=[]
 win_index=[]
 def won?(board)
   for each_combination in WIN_COMBINATIONS
-    win_index_1=each_combination[0]
-    win_index_2=each_combination[1]
-    win_index_3=each_combination[2]
+    win_index_1=each_combination[0].chomp
+    win_index_2=each_combination[1].chomp
+    win_index_3=each_combination[2].chomp
     
     position_1=board[win_index_1]
     position_2=board[win_index_2]
@@ -20,7 +20,7 @@ def won?(board)
     status=[position_1,position_2,position_3]
     win_index=[win_index_1,win_index_2,win_index_3]
   if status.all? {|x| x=="X"}
-    puts win_index.chomp.inspect
+    puts win_index.inspect
   elsif status.all? {|x| x=="O"}
     puts win_index.chomp.inspect
   else
