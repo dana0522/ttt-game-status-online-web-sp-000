@@ -19,9 +19,9 @@ def won?(board)
     status=[position_1,position_2,position_3]
     
   if status.all? {|x| x=="X"}
-    return status
+    puts status
   elsif status.all? {|x| x=="O"}
-    return status
+    puts status
   else
     return false
   end
