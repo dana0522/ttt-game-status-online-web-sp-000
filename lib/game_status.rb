@@ -21,14 +21,14 @@ def won?(board)
     win_index=[win_index_1,win_index_2,win_index_3]
     puts status.inspect
     puts win_index.inspect
- # if status.all? {|x| x=="X"}
-  #  puts win_index.inspect
-  #elsif status.all? {|x| x=="O"}
-   # puts win_index.inspect
-  #else
-   # return false
-  #end
+   if status.all? {|x| x=="X"}
+     puts win_index.inspect
+  elsif status.all? {|x| x=="O"}
+     puts win_index.inspect
+  else
+   return false
   end
+end
 end
 
 won?(["X", " ", "X", "O", "O", " ", "X", "X", "X"])
