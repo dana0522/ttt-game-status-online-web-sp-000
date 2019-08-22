@@ -29,5 +29,5 @@ def won?(board)
       return false
   end
 end
-
+end
 won?(["X", " ", "X", "O", "O", " ", "X", "X", "X"])
