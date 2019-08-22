@@ -22,7 +22,7 @@ def won?(board)
   if status.all? {|x| x=="X"}
     puts win_index.inspect
   elsif status.all? {|x| x=="O"}
-    return win_index.inspect
+    puts win_index.inspect
   else
     return false
   end
