@@ -20,9 +20,9 @@ def won?(board)
     status=[position_1,position_2,position_3]
     win_index=[win_index_1,win_index_2,win_index_3]
   if status.all? {|x| x=="X"}
-    return win_index
+    puts win_index
   elsif status.all? {|x| x=="O"}
-    return win_index
+    puts win_index
   else
     return false
   end
