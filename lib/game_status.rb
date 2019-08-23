@@ -59,11 +59,25 @@ end
 
 
 def winner(board)
-  yield at won?(board)
-  if won?(board)!=false 
-    puts board[win_index_1]
-  else
-    false
+  for each_combination in WIN_COMBINATIONS
+    win_index_1=each_combination[0]
+    win_index_2=each_combination[1]
+    win_index_3=each_combination[2]
+    
+    position_1=board[win_index_1]
+    position_2=board[win_index_2]
+    position_3=board[win_index_3]
+    
+    status=[position_1,position_2,position_3]
+    win_index=[win_index_1,win_index_2,win_index_3]
+
+    if status.all? {|x| x=="X"}
+      puts "X"
+    elsif status.all? {|x| x=="O"}
+      puts "O"
+    else
+      false
+    end
   end
 end
 
