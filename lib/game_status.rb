@@ -24,8 +24,7 @@ def won?(board)
       puts win_index.inspect
     elsif position_1=="O" && position_2=="O" && position_3=="O"
       puts win_index.inspect
-    else
-      false
+
     end
   end
 end
