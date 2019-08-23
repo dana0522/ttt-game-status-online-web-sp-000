@@ -66,3 +66,5 @@ def winner(board)
     false
   end
 end
+
+puts winner([])
