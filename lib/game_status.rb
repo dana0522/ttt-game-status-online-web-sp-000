@@ -39,3 +39,11 @@ def full?(board)
   end
 end
 
+
+def draw?(board)
+  if board.any? {|x| x==" "} && won?(board)==false
+    false 
+  elsif board.any? {|x| x==" "} == false && won?(board)==false
+    true 
+  end
+end
