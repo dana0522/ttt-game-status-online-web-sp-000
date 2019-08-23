@@ -25,7 +25,7 @@ def won?(board)
     if status.all? {|x| x=="X"} or status.all? {|x| x=="O"}
       return win_index
     else
-      return false
+      false
     end
   end
 end
