@@ -23,7 +23,7 @@ def won?(board)
     win_index=[win_index_1,win_index_2,win_index_3]
 
     if status.all? {|x| x=="X"} or status.all? {|x| x=="O"}
-      return win_index.inspect
+      return win_index
     else
       false
     end
