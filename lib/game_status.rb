@@ -21,9 +21,9 @@ def won?(board)
     win_index=[win_index_1,win_index_2,win_index_3]
     
     if position_1=="X" && position_2=="X" && position_3=="X"
-      puts win_index.inspect
+      puts [win_index_1,win_index_2,win_index_3].inspect
     elsif position_1=="O" && position_2=="O" && position_3=="O"
-      puts win_index.inspect
+      puts [win_index_1,win_index_2,win_index_3].inspect
     else
       false
     end
