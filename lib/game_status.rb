@@ -22,7 +22,7 @@ def won?(board)
     
     if status.all? {|x| x=="X"}
       puts win_index.inspect
-    elsif position_1=="O" && position_2=="O" && position_3=="O"
+    elsif status.all? {|x| x=="O"}
       puts win_index.inspect
 
     end
