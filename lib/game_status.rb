@@ -59,7 +59,7 @@ end
 
 
 def winner(board)
-  yield
+  yield at won?(board)
   if won?(board)!=false 
     puts board[win_index_1]
   else
