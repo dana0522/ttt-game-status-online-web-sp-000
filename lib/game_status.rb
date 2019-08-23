@@ -43,9 +43,9 @@ end
 
 
 def draw?(board)
-  if full?(board)==false && won?(board)==false
+  if full?(board)==true && won?(board)==false
     false 
-  elsif board.any? {|x| x==" "} == false && won?(board)==false
+  elsif full?(board)==false && won?(board)==false
     true 
   end
 end
