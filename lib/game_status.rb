@@ -111,4 +111,4 @@ end
 
 
 
-puts wong?(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
+puts wong?(["X", "X", "X", "O", "X", "X", "O", "X", "O"])
