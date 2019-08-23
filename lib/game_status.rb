@@ -89,4 +89,4 @@ end
 
 
 
-puts wong?(["X", "X", "X", "O", "X", "X", "O", "X", "O"])
+puts won?(["X", "X", "X", "O", "X", "X", "O", "X", "O"])
