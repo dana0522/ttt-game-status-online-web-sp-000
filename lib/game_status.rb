@@ -61,7 +61,9 @@ def over?(board)
   end
 end
 
-
+status=[]
+win_index=[]
+winner=" "
 def winner(board)
   for each_combination in WIN_COMBINATIONS
     win_index_1=each_combination[0]
@@ -76,13 +78,14 @@ def winner(board)
     win_index=[win_index_1,win_index_2,win_index_3]
 
     if status.all? {|x| x=="X"}
-      puts "X"
+      winner=="X"
     elsif status.all? {|x| x=="O"}
-      puts "O"
+      winner=="O"
     else
       false
     end
   end
+  puts winner
 end
 
 
