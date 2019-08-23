@@ -91,4 +91,4 @@ end
 
 
 
-puts draw?(["X", "X", "X", "O", "X", "X", "O", "X", "O"])
+puts draw?(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
