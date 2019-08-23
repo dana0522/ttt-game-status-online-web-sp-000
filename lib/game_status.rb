@@ -56,3 +56,7 @@ def over?(board)
     false
   end
 end
+
+
+def win?(board)
+  
