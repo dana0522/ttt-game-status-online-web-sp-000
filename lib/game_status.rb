@@ -48,6 +48,7 @@ def draw?(board)
       false
     elsif full?(board)==true
       true
+    end
   end
 end
 
