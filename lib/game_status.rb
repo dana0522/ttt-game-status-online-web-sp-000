@@ -78,9 +78,9 @@ def winner(board)
     win_index=[win_index_1,win_index_2,win_index_3]
 
     if status.all? {|x| x=="X"}
-      winner=="X"
+      winner="X"
     elsif status.all? {|x| x=="O"}
-      winner=="O"
+      winner="O"
     else
       false
     end
