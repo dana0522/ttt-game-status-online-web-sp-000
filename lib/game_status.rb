@@ -28,7 +28,4 @@ def won?(board)
       false
     end
   end
-  puts "end"
 end
-
-won?(["X"," "," "," ","X"," "," "," ","X"])
