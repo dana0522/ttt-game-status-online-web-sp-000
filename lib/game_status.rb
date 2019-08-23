@@ -32,7 +32,7 @@ def won?(board)
     elsif status.all? {|x| x=="O"}
       puts win_index.inspect
     else
-     false
+      false
     end
   end
 end
