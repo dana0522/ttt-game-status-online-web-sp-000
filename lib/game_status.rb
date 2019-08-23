@@ -24,8 +24,6 @@ def won?(board)
 
     if status.all? {|x| x=="X"} or status.all? {|x| x=="O"}
       puts win_index.inspect
-    elsif status.all? {|x| x==" "}
-      false
     else
       false
     end
