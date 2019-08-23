@@ -81,4 +81,34 @@ def winner(board)
   end
 end
 
-puts winner(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
+
+
+status=[]
+win_index=[]
+final=[]
+def wong?(board)
+  for each_combination in WIN_COMBINATIONS
+    win_index_1=each_combination[0]
+    win_index_2=each_combination[1]
+    win_index_3=each_combination[2]
+    
+    position_1=board[win_index_1]
+    position_2=board[win_index_2]
+    position_3=board[win_index_3]
+    
+    status=[position_1,position_2,position_3]
+    win_index=[win_index_1,win_index_2,win_index_3]
+
+    if status.all? {|x| x=="X"} or status.all? {|x| x=="O"}
+      final=win_index
+    else
+      false
+    end
+  end
+  return final
+end
+
+
+
+
+puts wong?(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
