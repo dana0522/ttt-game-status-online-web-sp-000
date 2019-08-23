@@ -28,6 +28,5 @@ def won?(board)
     end
   end
 end
-end
 
 puts won?(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
