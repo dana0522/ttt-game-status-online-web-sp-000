@@ -13,15 +13,13 @@ def won?(board)
     win_index_2=each_combination[1]
     win_index_3=each_combination[2]
     
-    puts win_index_1
-    puts win_index_2
+ 
     
     position_1=board[win_index_1]
     position_2=board[win_index_2]
     position_3=board[win_index_3]
     
-    puts position_1
-    puts position_2
+  
     
     status=[position_1,position_2,position_3]
     win_index=[win_index_1,win_index_2,win_index_3]
